@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPrimary2">#DD33FF00</color>
+    <color name="colorPrimaryDark2">#AA00BB</color>
+    <color name="colorAccent2">#CC2222</color>
+
+    <color name="cadetBlue">#5F9EA0</color>
+    <color name="DeepSkyBlue">#00BFFF</color>
+    <color name="powDerBlue">#B0E0E6</color>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cadetBlue"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/Btn01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv02"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="left"
+        android:textColor="@color/colorPrimaryDark2"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/spinnerChoose_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/spinnerTip"
+        android:textColor="@drawable/white"
+        android:textSize="30dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/DeepSkyBlue" />
+
+    <EditText
+        android:id="@+id/input_search_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@color/powDerBlue"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/search_file_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查找文件"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/file_show_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp" />
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice"/>
+</LinearLayout>

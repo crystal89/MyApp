@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">MyAPP</string>
+
+    <string name="Btn01">Press me</string>
+    <string name="Btn02">Back</string>
+
+    <string name="strNULL"></string>
+    <string name="text01">Hello Everyone !</string>
+    <string name="text02">Hi Ever !</string>
+
+    <string name="hello">Hello World!</string>
+
+    <string name="tv01">欢迎来到Android的TextView世界...</string>
+    <string name="tv02">测试</string>
+
+    <string name="AlterDialog">弹出对话框</string>
+    <string name="DialogTitle">重要提示</string>
+    <string name="DialogContent">请点击确认</string>
+    <string name="DialogButton">确定</string>
+    <array name="DialogItems">
+        <item>选项一</item>
+        <item>选项二</item>
+        <item>选项三</item>
+    </array>
+
+    <string name="ProgressDialog">加载中</string>
+    <string name="ProgressDialogTitle">请稍等片刻...</string>
+    <string name="ProgressDialogContent">正在执行前端运算......</string>
+
+    <string name="personInfo">个人信息</string>
+    <string name="title">计算标准体重</string>
+    <string name="sex">性别:</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="stature">身高:</string>
+    <string name="unit">CM</string>
+    <string name="calc">计算</string>
+    <string name="back">返回</string>
+
+    <string name="spinnerTip">请选择你所在的城市</string>
+</resources>
