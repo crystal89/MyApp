@@ -10,24 +10,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tv02"
-        android:textSize="24dp" />
-
-    <TextView
-        android:id="@+id/tvInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:gravity="left"
-        android:textColor="@color/colorPrimaryDark2"
-        android:textSize="20dp" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/backBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/back"
-        android:textSize="24dp" />
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/open_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open URL"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="left"
+        android:textColor="@color/colorPrimaryDark2"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/spinnerChoose_item"
@@ -35,7 +42,7 @@
         android:layout_height="wrap_content"
         android:text="@string/spinnerTip"
         android:textColor="@drawable/white"
-        android:textSize="30dp" />
+        android:textSize="20sp" />
 
     <Spinner
         android:id="@+id/spinner"
@@ -64,9 +71,9 @@
         android:layout_height="wrap_content"
         android:textSize="16dp" />
 
-        <ListView
-            android:id="@+id/list_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:choiceMode="singleChoice"/>
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice" />
 </LinearLayout>

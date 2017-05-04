@@ -7,6 +7,7 @@ package com.crystal.hq.myapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.animation.Animation;
@@ -42,6 +43,8 @@ public class MyActivity extends Activity {
     private ListView listview;
     private ArrayAdapter<String> listAdapter;
     private ArrayList<String> file_research_result;
+
+    private Button openUrl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -122,8 +125,8 @@ public class MyActivity extends Activity {
         inputsearchET = (EditText) findViewById(R.id.input_search_ET);
         searchfileBtn = (Button) findViewById(R.id.search_file_btn);
         fileshowTV = (TextView) findViewById(R.id.file_show_tv);
-        listview =(ListView)findViewById(R.id.list_view);
-        file_research_result =new ArrayList<>();
+        listview = (ListView) findViewById(R.id.list_view);
+        file_research_result = new ArrayList<>();
 
         searchfileBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -131,30 +134,37 @@ public class MyActivity extends Activity {
                 String result = "";
                 String keyword = inputsearchET.getText().toString();
                 file_research_result.clear();
-                if (keyword.equals(""))
-                {
+                if (keyword.equals("")) {
                     result = "请输入查找的关键字信息";
                     file_research_result.add(result);
-                }
-                else {
+                } else {
                     File[] files = new File("/").listFiles();
                     for (File f : files) {
-                        if (f.getName().indexOf(keyword) >= 0)
-                        {
+                        if (f.getName().indexOf(keyword) >= 0) {
                             result += f.getPath() + "\n";
                             file_research_result.add(f.getPath());
                         }
                     }
-                    if (result.equals(""))
-                    {
+                    if (result.equals("")) {
                         result = "未找到文件";
                         file_research_result.add(result);
                     }
                 }
                 fileshowTV.setText(result);
                 //使用listview显示内容
-                listAdapter=new ArrayAdapter<>(MyActivity.this,R.layout.listview_layout, file_research_result);
+                listAdapter = new ArrayAdapter<>(MyActivity.this, R.layout.listview_layout, file_research_result);
                 listview.setAdapter(listAdapter);
+            }
+        });
+
+        openUrl = (Button) findViewById(R.id.open_url);
+        openUrl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://www.baidu.com/"));
+                startActivity(intent);
             }
         });
     }
@@ -170,7 +180,7 @@ public class MyActivity extends Activity {
     }
 
     void changeActivity() {
-        setTheme(R.style.Theme);
+        setTheme(R.style.AppTheme);
         Intent intent = new Intent();
         intent.setClass(MyActivity.this, MainActivity.class);
         startActivity(intent);

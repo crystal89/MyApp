@@ -1,5 +1,5 @@
 <resources>
-    <!-- Base application theme. -->
+    <!-- 基础应用程序主题. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -7,8 +7,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <!--基础应用程序主题-->
-    <style name="Theme" parent="android:Theme"></style>
+    <!--
+        <style name="Theme" parent="android:Theme"></style>
+    -->
     <!--使主题具有Translucent后台-->
     <string name="Theme.Translucent">
         <item name="android:windowNoTitle">false</item>
